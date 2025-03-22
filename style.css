@@ -1039,8 +1039,8 @@ body {
     align-items: center; /* Centra los elementos verticalmente */
     justify-content: center; /* Centra los elementos horizontalmente en el contenedor */
     position: fixed; /* Mantiene el reproductor en una posición fija */
-    bottom: 20px; /* Posición desde abajo */
-    left: 50%; /* Centra el contenedor en la página */
+    bottom: 350px; /* Posición desde abajo */
+    left: 85%; /* Centra el contenedor en la página */
     transform: translateX(-50%); /* Asegura un centrado perfecto */
     width: auto; /* Auto ajusta el ancho basado en el contenido */
     padding: 10px; /* Espacio alrededor del contenido */
@@ -1105,15 +1105,6 @@ body {
 
 /* Media query para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
-    .music-player {
-        position: fixed;  /* Asegura que el reproductor permanezca en una posición fija */
-        bottom: 10px;     /* Mantiene el reproductor en la parte inferior */
-        right: 10px;      /* Mueve el reproductor a la derecha */
-        left: auto;       /* Anula cualquier valor anterior de 'left' */
-        width: auto;      /* Permite que el reproductor se ajuste al contenido */
-        max-width: 80px;  /* Máximo ancho para el botón */
-    }
-
     .play-pause-btn {
         width: 100%;     /* Hace que el botón ocupe todo el ancho de su contenedor */
         padding: 10px;   /* Ajuste de padding para un mejor toque */
