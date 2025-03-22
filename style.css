@@ -1035,14 +1035,18 @@ body {
 }
 
 .music-player {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    display: flex; /* Utiliza Flexbox para el layout */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente en el contenedor */
+    position: fixed; /* Mantiene el reproductor en una posición fija */
+    bottom: 20px; /* Posición desde abajo */
+    left: 50%; /* Centra el contenedor en la página */
+    transform: translateX(-50%); /* Asegura un centrado perfecto */
+    width: auto; /* Auto ajusta el ancho basado en el contenido */
+    padding: 10px; /* Espacio alrededor del contenido */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para visibilidad */
     background-color: #333;
-    padding: 5px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 100;
 }
 
 .play-pause-btn {
