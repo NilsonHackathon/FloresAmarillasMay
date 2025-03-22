@@ -1102,32 +1102,20 @@ body {
 /* Media query para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 600px) {
     .music-player {
-        position: fixed;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;  /* Hace que la caja ocupe la mayor parte del ancho de la pantalla */
-        max-width: 300px; /* Limita el tamaño máximo para evitar que sea demasiado grande en dispositivos más anchos */
-        padding: 5px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        position: fixed;  /* Asegura que el reproductor permanezca en una posición fija */
+        bottom: 10px;     /* Mantiene el reproductor en la parte inferior */
+        right: 10px;      /* Mueve el reproductor a la derecha */
+        left: auto;       /* Anula cualquier valor anterior de 'left' */
+        width: auto;      /* Permite que el reproductor se ajuste al contenido */
+        max-width: 80px;  /* Máximo ancho para el botón */
     }
 
     .play-pause-btn {
-        width: 100%; /* Hace que el botón de play/pause ocupe todo el ancho del contenedor */
-        font-size: 16px; /* Asegura que el texto sea legible */
-        padding: 12px 0; /* Aumenta el padding para facilitar la interacción táctil */
+        width: 100%;     /* Hace que el botón ocupe todo el ancho de su contenedor */
+        padding: 10px;   /* Ajuste de padding para un mejor toque */
     }
 
     .album-cover {
-        width: 80px; /* Reduce el tamaño de la imagen del disco para dispositivos móviles */
-        height: 80px;
-        margin: auto; /* Centra la imagen dentro del contenedor */
-    }
-
-    .text-container, .signature {
-        padding: 0 20px; /* Añade padding lateral para evitar que el texto toque los bordes */
-        font-size: 10px; /* Ajusta el tamaño del texto para una mejor legibilidad en móviles */
+        display: none;  /* Oculta la imagen del disco en dispositivos móviles para ahorrar espacio */
     }
 }
-
-/* Puedes hacer ajustes similares para tablets y desktops si lo crees necesario */
